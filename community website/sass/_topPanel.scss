@@ -1,0 +1,70 @@
+.logo{
+  flex-basis: 200px;
+
+  &__image{
+    display: block;
+    width: 100%;
+  }
+  &__title{
+    font-size: 1.8rem;
+    margin: 0 20px;
+  }
+}
+.search{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  margin-right: 20px;
+  @media(max-width: 799px){
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    order: -1;
+  }
+  &__input{
+    flex-basis: 30%;
+    height: 50%;
+    min-height: 30px;
+    max-height: 60px;
+    margin-right: 2vh;
+    padding: 0 10px;
+    font-size: 1.4rem;
+    &:focus{
+      box-shadow: 0 0 2px 1px #622be9;
+    }
+  }
+  &__btn{
+    font-size: 1.4rem;
+    height: 50%;
+    min-height: 30px;
+    max-height: 60px;
+    padding: 0 10px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+      background-color: $hover-color;
+      color: white;
+    }
+  }
+}
+.switch{
+  display: flex;
+  padding: 0 5px 0 50px;
+  align-items: center;
+  @media(max-width: 799px){
+    flex-grow: 1;
+    justify-content: flex-end;
+    }
+  &__icon-link{
+    margin: 0 10px;
+    font-size: 3rem;
+    color: #666;
+    transition: 0.3s;
+    &:hover{
+      color: $hover-color;
+    }
+  }
+}

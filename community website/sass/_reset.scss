@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+  // background-color: $bg-color;
+  background-image: url('../assets/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family:$default-font;
+  color: white;
+}

@@ -1,0 +1,45 @@
+.menu{
+  flex-basis: 100%;
+  background-color: #a0c4ff;
+  height: 70px;
+  margin-top: 10px;
+  font-family: $special-font;
+  padding: 15px 50px 15px 80px;
+  &__list{
+    display: flex;
+    list-style: none;
+  }
+  &__item{
+    margin: 0 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 4rem;
+    border-bottom: 1px solid #a0c4ff;
+    transition: 0.3s;
+    &:hover{
+      border-bottom: 1px solid darkgoldenrod;
+    }
+    &:nth-last-child(1){
+      margin-left: auto;
+      border: 2px solid #333;
+      border-radius: 5px;
+      &:hover{
+        background-color: $hover-color;
+        border-color: darkgoldenrod;
+      }
+      .menu__link{
+        padding: 0 20px;
+      }
+     }
+  }
+  &__link{
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+  &__btn{
+    color: white;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+}
