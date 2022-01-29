@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import Button from './Button';
 import './NavMenu.css';
 
 
 function NavMenu() {
   const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
 
   const handleClick = () => {
     setClick(!click)
@@ -13,6 +15,15 @@ function NavMenu() {
   const closeSideMenu = () => {
     setClick(false)
   }
+
+  const showSideButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false)
+    } else {
+      setButton(true)
+    }
+  };
+  window.addEventListener('resize', showSideButton);
 
   return (
     <>
@@ -24,7 +35,7 @@ function NavMenu() {
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul className={click ? 'menu-list active' : 'menu-list'}>
             <li className='menu-item'>
               <NavLink to='/' className='menu-link' onClick={closeSideMenu}>
                 Home
@@ -45,7 +56,17 @@ function NavMenu() {
                 Activists/Organizations
               </NavLink>
             </li>
+            {/* <li>
+              <NavLink
+                to='/sign-up'
+                className='menu-link-mob'
+                onClick={closeSideMenu}
+              >
+                Sign Up
+              </NavLink>
+            </li> */}
           </ul>
+          {button && <Button buttonStyle='btn--outline'>Sign up</Button>}
         </div>
       </nav>
 
