@@ -31,17 +31,17 @@ function NavMenu() {
               </NavLink>
             </li>
             <li className='menu-item'>
-              <NavLink to='/' className='menu-link' onClick={closeSideMenu}>
+              <NavLink to='/threats' className='menu-link' onClick={closeSideMenu}>
                 Threats
               </NavLink>
             </li>
             <li className='menu-item'>
-              <NavLink to='/' className='menu-link' onClick={closeSideMenu}>
+              <NavLink to='/solutions' className='menu-link' onClick={closeSideMenu}>
                 Solutions
               </NavLink>
             </li>
             <li className='menu-item'>
-              <NavLink to='/' className='menu-link' onClick={closeSideMenu}>
+              <NavLink to='/activists' className='menu-link' onClick={closeSideMenu}>
                 Activists/Organizations
               </NavLink>
             </li>
