@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Button from './Button';
 import './NavMenu.css';
@@ -23,13 +23,17 @@ function NavMenu() {
       setButton(true)
     }
   };
+
+  useEffect(() => {
+    showSideButton();
+  }, [])
   window.addEventListener('resize', showSideButton);
 
   return (
     <>
       <nav className='menu'>
         <div className='menu-container'>
-          <NavLink to='/' className="menu-logo">
+          <NavLink to='/' className="menu-logo" onClick={closeSideMenu}>
             Safe Our Planet <i className="fas fa-globe-americas" />
           </NavLink>
           <div className='menu-icon' onClick={handleClick}>

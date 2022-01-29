@@ -1,5 +1,6 @@
 import NavMenu from './components/NavMenu';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/pages/Home';
 import './App.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
       <Router>
         <NavMenu />
         <Routes>
-          <Route path='/' exact />
+          <Route path='/' exact element={<Home />} />
         </Routes>
 
       </Router>
