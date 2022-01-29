@@ -56,7 +56,7 @@ function NavMenu() {
                 Activists/Organizations
               </NavLink>
             </li>
-            {/* <li>
+            <li>
               <NavLink
                 to='/sign-up'
                 className='menu-link-mob'
@@ -64,7 +64,7 @@ function NavMenu() {
               >
                 Sign Up
               </NavLink>
-            </li> */}
+            </li>
           </ul>
           {button && <Button buttonStyle='btn--outline'>Sign up</Button>}
         </div>
