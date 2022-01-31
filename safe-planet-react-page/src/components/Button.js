@@ -10,7 +10,7 @@ function Button({ children, type, onClick, buttonStyle, buttonSize }) {
   const chceckButtonSize = size.includes(buttonSize) ? buttonSize : size[0];
 
   return (
-    <NavLink to='/sign-up' className='side-btn'>
+    <NavLink to='/join-us' className='side-btn'>
       <button
         className={`btn ${chceckButtonStyle} ${chceckButtonSize}`}
         onClick={onClick}

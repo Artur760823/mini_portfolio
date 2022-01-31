@@ -6,9 +6,6 @@ video{
   z-index: -1;
 }
 .movie-container{
- 
-  /* background-image: url('../../public/asstets/img/photovoltaic.jpg') ;
-  background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
