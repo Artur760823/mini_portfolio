@@ -1,0 +1,57 @@
+.activists, .threats, .solutions h1{
+  color: red;
+}
+
+.content{
+  background-color:white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content__intro{
+  flex-basis: 100%;
+  text-transform: uppercase;
+  padding: 10px 0;
+  background-color: rgba(0,0,0,0.3);
+  margin: 40px 0 30px;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.content__article{
+  padding: 30px 50px;
+  color: #444;
+  text-align: justify;
+}
+.content__image{
+  display: block;
+  width: 100%;
+  height: 60%;
+}
+.content__title{
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.content__description{
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+.content__article{
+  flex-basis: 45%;
+}
+
+@media(max-width:1199px){
+  .content__image{
+    height: 40%;
+  }
+}
+@media(max-width:799px){
+  .content__article{
+    flex-basis: 95%;
+  }
+  .content__image{
+    height: 30%;
+  }
+}

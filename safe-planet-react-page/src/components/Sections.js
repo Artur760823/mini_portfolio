@@ -18,7 +18,7 @@ function Sections() {
         />
         <SectionItem
           src={pictureThreats}
-          text='Known the treats'
+          text='Known the threats'
           label='What'
           path='/threats'
         />

@@ -17,33 +17,6 @@
   justify-content: center;
   font-size: 3rem;
 }
-
-.threats {
-  /* background-image: url('/images/img-2.jpg'); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: black;
-  font-size: 100px;
-}
-
-.solutions {
-  /* background-image: url('/images/img-1.jpg'); */
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  font-size: 100px;
-}
-.activists {
-  /* background-image: url('/images/img-1.jpg'); */
-  background-position: center;
-  background-size: fill;
-  font-size: 100px;
-}
-.sign-up {
-  /* background-image: url('/images/img-8.jpg'); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 100px;
+h1{
+  margin-bottom: 50px;
 }
