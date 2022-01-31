@@ -62,15 +62,15 @@ function NavMenu() {
             </li>
             <li>
               <NavLink
-                to='/sign-up'
+                to='/join-us'
                 className='menu-link-mob'
                 onClick={closeSideMenu}
               >
-                Sign Up
+                Join us
               </NavLink>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Sign up</Button>}
+          {button && <Button buttonStyle='btn--outline'>Join us</Button>}
         </div>
       </nav>
 

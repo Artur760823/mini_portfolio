@@ -96,7 +96,7 @@
   }
 
   .menu-list.active {
-  background: rgb(117, 206, 35);
+  background: rgba(117, 206, 35, 0.7);
     left: 0;
     opacity: 1;
     transition: 0.5s;
